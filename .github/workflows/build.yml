@@ -21,7 +21,10 @@ jobs:
           # extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          hugo new blogcog
+          cd blogcog
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
