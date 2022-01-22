@@ -27,5 +27,5 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
-          name: jekyll-site
+          name: jekyll-site-rb${{ matrix.ruby-version }}
           path: /home/runner/work/blogcog-ex/blogcog-ex/_site
