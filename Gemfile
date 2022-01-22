@@ -1,1 +1,4 @@
-source "https://rubygems.pkg.github.com/blogcog" do  gem "blogcog", "1.0" end
+source "https://rubygems.org"
+gem "rails"
+source "https://rubygems.pkg.github.com/blogcog"
+gem "blogcog"
