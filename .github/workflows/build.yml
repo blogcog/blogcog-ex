@@ -24,9 +24,8 @@ jobs:
       - name: Build
         run: jekyll build ./
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          name: jekyll-site
+          path: /home/runner/work/blogcog-ex/blogcog-ex/_site
