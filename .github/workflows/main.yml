@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install heroku
-        run: sudo snap install --classic heroku
+        run: sudo apt-get install heroku
       - run: gem install rails --pre
       - run: heroku login
         env:
